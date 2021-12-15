@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.2/aframe/build/aframe-ar.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='sourceType: webcam;'>
+
+        <a-marker preset="kanji">
+            <a-text value="Diametro: 4.879 km" color="grey" position="-1 0.8 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole:58 milioni di km" color="grey" position="-1 0.6 0" scale="1 1 1"></a-text>
+            <a-text value="MERCURIO" color="grey" position="-1 1 0"></a-text>
+            <a-sphere src="img/01_mercury.png" radius="0.25" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+
+        <a-marker type="pattern" url="marker/pattern/letterA.patt">
+            <a-text value="Diametro: 12.104 km" color="#daa520" position="-1.4 1.2 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole:109 milioni di km" color="#daa520" position="-1.4 1 0" scale="1 1 1"></a-text>
+            <a-text value="VENERE" color="#daa520" position="-1.4 1.4 0"></a-text>
+            <a-sphere src="img/02_venus.jpg" radius="0.4" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker preset="hiro">
+            <a-text value="Diametro: 12.742 km" color="green" position="-1 1.6 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole:149.600.000 km" color="green" position="-1 1.4 0" scale="1 1 1"></a-text>
+            <a-text value="TERRA" color="green" position="-1 1.8 0"></a-text>
+            <a-sphere src="img/03_earth.jpg" radius="0.4" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker type="pattern" url="marker/pattern/letterB.patt">
+            <a-text value="Diametro: 6.779 km" color="red" position="-1 0.9 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole:227,8 milioni di km" color="red" position="-1.7 0.7 0" scale="1 1 1"></a-text>
+            <a-text value="MARTE" color="red" position="-1 1.1 0"></a-text>
+            <a-sphere src="img/04_mars.jpg" radius="0.25" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker type="pattern" url="marker/pattern/letterC.patt">
+            <a-text value="Diametro: 139.820 km" color="brown" position="-1.7 1.5 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole:  778 412 020 km" color="brown" position="-1.7 1.3 0" scale="1 1 1"></a-text>
+            <a-text value="GIOVE" color="brown" position="-1.7 1.7 0"></a-text>
+            <a-sphere src="img/05_jupiter.jpg" radius="1.0" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker type="pattern" url="marker/pattern/letterD.patt">
+            <a-text value="Diametro: 116.460 km" color="#fff8dc" position="-1 1.8 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole: 1.400.000.000 km" color="#fff8dc" position="-1 1.6 0" scale="1 1 1"></a-text>
+            <a-text value="SATURNO" color="#fff8dc" position="-1 2 0"></a-text>
+            <a-sphere src="img/06_saturn.jpg" radius="0.8" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker type="pattern" url="marker/pattern/letterF.patt">
+            <a-text value="Diametro: 50.724 km" color="#5f9ea0" position="-1.2 1.1 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole: 3 miliardi di km" color="#5f9ea0" position="-1.2 0.9 0" scale="1 1 1"></a-text>
+            <a-text value="URANO" color="#5f9ea0" position="-1.2 1.3 0"></a-text>
+            <a-sphere src="img/07_uranus.png" radius="0.6" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+        <a-marker type="pattern" url="marker/pattern/letterG.patt">
+            <a-text value="Diametro: 49.244 km" color="blue" position="0 1 0" scale="1 1 1"></a-text>
+            <a-text value="Distanza dal sole: 101 milioni di km" color="blue" position="0 0.8 0" scale="1 1 1"></a-text>
+            <a-text value="NETTUNO" color="blue" position="0 1.2 0"></a-text>
+            <a-sphere src="img/08_neptune.jpg" radius="0.6" segments-height="53" position="0 0 0" rotation='0 0 0'>
+                <a-animation attribute="rotation" dur="15000" to="0 360 0" easing="linear" repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-marker>
+
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
